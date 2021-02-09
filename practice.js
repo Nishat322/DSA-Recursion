@@ -31,7 +31,6 @@ function powerCalculator(base, exp){
 //console.log(powerCalculator(10, 1))
 
 /****************************Reverse String***************************/
-
 function reverseString(string){
     if (string.length === 0){
         return string
@@ -41,5 +40,16 @@ function reverseString(string){
 
 //console.log(reverseString('Hello'))
 
+/****************************nth Triangular Number***************************/
+function triangularNumber(n){
+    if(n < 0){
+        return console.log('Number must be greater than 0')
+    }
+    if(n === 0){
+        return 0
+    }
+    return n + triangularNumber(n-1) 
+}
 
+console.log(triangularNumber(7))
 

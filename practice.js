@@ -11,7 +11,7 @@ function countingSheep(num){
     countingSheep(num - 1)
 }
 
-countingSheep(3)
+//countingSheep(3)
 
 /****************************Power Calculator***************************/
 function powerCalculator(base, exp){
@@ -28,4 +28,18 @@ function powerCalculator(base, exp){
     return base * powerCalculator(base, exp-1)
 }
 
-console.log(powerCalculator(10, 1))
+//console.log(powerCalculator(10, 1))
+
+/****************************Reverse String***************************/
+
+function reverseString(string){
+    if (string.length === 0){
+        return string
+    }
+    return reverseString(string.substring(1)) + string.charAt(0)
+}
+
+//console.log(reverseString('Hello'))
+
+
+
